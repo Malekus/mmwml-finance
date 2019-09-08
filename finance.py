@@ -42,12 +42,14 @@ plt.show()
 predict = moving_average(dataNumpy[:, 5], 2)
 
 plt.figure()
+plt.title('Moving Average')
 plt.plot(X, y, c='red')
 plt.scatter(X, y, c='red', marker='x')
 plt.plot(X[1:], predict, c='blue')
 plt.scatter(X[1:], predict, c='blue', marker='x')
 plt.xticks([date for index, date in enumerate(X) if index % 25 == 0 or index == len(X)-1])
 plt.grid(axis='x')
+plt.legend(['test', 'predict'])
 plt.show()
 
 
