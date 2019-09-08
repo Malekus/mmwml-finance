@@ -62,6 +62,7 @@ plt.figure()
 plt.title('LinearRegression')
 plt.scatter(X_test, y_test,  color='red', marker='x')
 plt.plot(X_test, y_pred, color='blue', linewidth=1)
+plt.legend(['predict', 'test'])
 plt.show()
 
 
@@ -72,7 +73,8 @@ y_pred2 = clf2.predict(X_test.reshape(-1, 1))
 plt.figure()
 plt.title('Ridge')
 plt.scatter(X_test, y_test,  color='red', marker='x')
-plt.plot(X_test, y_pred2, color='blue', linewidth=0.5)
+plt.plot(X_test, y_pred2, color='blue', linewidth=1)
+plt.legend(['predict', 'test'])
 plt.show()
 
 
@@ -83,7 +85,8 @@ y_pred3 = clf3.predict(X_test.reshape(-1, 1))
 plt.figure()
 plt.title('Lasso')
 plt.scatter(X_test, y_test,  color='red', marker='x')
-plt.plot(X_test, y_pred3, color='blue', linewidth=0.5)
+plt.plot(X_test, y_pred3, color='blue', linewidth=1)
+plt.legend(['predict', 'test'])
 plt.show()
 
 
